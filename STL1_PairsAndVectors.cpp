@@ -8,6 +8,8 @@ int main()
     pair <int,int> p;
     p.first=3;
     p.second=4;
+    p=make_pair(3,4); //Way1 to initialize a pair
+    p={3,4};    //Way2 to initialize a pair
     pair <int,int> p2=p; //Passed without reference (means copying the values of p at this present moment)
     p.first=2;
     cout<<p2.first<<" "<<p2.second<<endl;
