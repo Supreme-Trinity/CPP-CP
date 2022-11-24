@@ -43,5 +43,25 @@ int main()
     for(int i=0;i<m;i++){
         printvec(vec[i]);
     }
+    
+    //Vector of vectors
+    vector <vector <int>> vect;
+    int q;
+    cin>>q;
+    for(int i=0;i<q;i++){
+        int o;
+        cin>>o;
+        vector <int> temp;
+        for(int i=0;i<o;i++){
+            int a;
+            cin>>a;
+            temp.push_back(a);
+        }
+        vect.push_back(temp);
+    }
+    
+    for(int i=0;i<vect.size();i++){
+        printvec(vect[i]);
+    }
     return 0;
 }
